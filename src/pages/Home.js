@@ -18,7 +18,7 @@ useEffect(() => {
     getCountries()
 }, [])
 
-const pagination = () => setCurrentPage(pageNumber)
+const paginate = (pageNumber) => setCurrentPage(pageNumber)
 
 //get current posts
 const indexOfLastPost = currentPage * postPerPage;
@@ -28,9 +28,6 @@ const currentCountries = countries.slice(indexOfFirstPost, indexOfLastPost)
 
     return(
         <>
-        <h1>
-            navbar
-        </h1>
         <Countries currentCountries={currentCountries} loading={loading}/>
         <Pagination postsPerPage={postPerPage} totalPosts={countries.length} paginate={paginate}/>
         </>
