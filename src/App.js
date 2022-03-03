@@ -1,9 +1,10 @@
 import { HashRouter, Routes, Route } from "react-router-dom";
 import Layout from "./pages/Layout";
 import ScrollToTop from "./components/ScrollToTop";
-import Home from "./pages/Home"
+import Home from "./pages/Home";
+
 // import DatailsPage from "./pages/DetailsPage"
-import './App.css';
+import "./App.css";
 
 function App() {
   return (
