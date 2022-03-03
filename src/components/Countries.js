@@ -3,7 +3,7 @@ const Countries = ({currentCountries, loading}) => {
     return(
         <main>
             <ul className="grid">
-            {currentCountries.map((country, index) => <li key={country.name.common} className="card">
+            {currentCountries.map((country) => <li key={country.name.common} className="card">
                 <h1>{country.name.common}</h1>
             </li>) }
             </ul>

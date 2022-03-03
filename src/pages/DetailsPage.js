@@ -3,7 +3,7 @@ const DetailsPage = () => {
     return(
         <>
         <h1>
-            navbar
+            details
         </h1>
         </>
     )
